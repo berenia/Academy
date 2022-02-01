@@ -12,13 +12,36 @@ import homeImage_section_1 from "../static/images/png/home_2.png";
 import BackgroundIllustrator from "../static/images/png/home_1.svg";
 // import { ButtonBC } from "../assets/styleComponents/customStyles";
 import { Homestyle } from "../assets/MUIstyles/customStyles";
-import { grid } from "@mui/system";
+import courseCard from "../courseCard";
 
 class Home extends React.Component {
 
   handleCloseNavMenu = () => {};
-
-  course = (props) => {
+    
+  courseCard = (props) => {
+      return (
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia
+            component="img"
+            alt="green iguana"
+            height="140"
+            image="/static/images/cards/contemplative-reptile.jpg"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizard
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over 6,000
+              species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+      );
     
   }
   headerImage = () => {
