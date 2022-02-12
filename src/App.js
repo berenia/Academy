@@ -1,16 +1,17 @@
-import ResponsiveAppBar from "./components/navbar";
-import LowerNavbar from "./components/lowerNavbar";
-import Home from "./components/home/home";
+import React from "react";
+import CoursePage from "./components/coursePage";
+import "./App.css";
+import TrendingCourses from "./components/trendingCourses";
+import CustomerReview from "./components/customerReview";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ResponsiveAppBar />
-        <LowerNavbar />
-      </header>
-      <Home />
-    </div>
+    <Box sx={{ p: 5, bgcolor: "#eee" }}>
+      <CoursePage />
+      <TrendingCourses />
+      <CustomerReview />
+    </Box>
   );
 }
 
