@@ -29,7 +29,7 @@ function coursePage() {
         </Typography>
         <Typography variant="body1">Be more productive by being proficient at your work</Typography>
       </Box>
-      <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+      <Box sx={{ display: "grid", gridTemplateColumns: { lg:"repeat(3, 1fr)", md:"repeat(2, 1fr)", sm: "repeat(2, 1fr)", xs: "repeat(1, 1fr)"}}}>
         {OfficeCourses.map(officeCourse => (
           <CourseCard key={officeCourse.id} name={officeCourse.name} image={officeCourse.image} />
         ))}
@@ -38,7 +38,7 @@ function coursePage() {
         Web Technology Skill
       </Typography>
       <Typography variant="body1">Be more productive by being proficient at your work</Typography>
-      <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+      <Box sx={{ display: "grid", gridTemplateColumns: { lg:"repeat(3, 1fr)", md:"repeat(2, 1fr)", sm: "repeat(2, 1fr)", xs: "repeat(1, 1fr)"} }}>
         {WebCourses.map(officeCourse => (
           <CourseCard key={officeCourse.id} name={officeCourse.name} image={officeCourse.image} />
         ))}

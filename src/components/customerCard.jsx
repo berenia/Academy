@@ -3,9 +3,9 @@ import { Box, Card, CardActionArea, CardContent, Typography } from "@mui/materia
 import styled from "styled-components";
 
 const RoundImage = styled.img`
-  width: 50%;
-  height: 40%;
-  padding-left: 20%;
+  width: 150px;
+  height: 150px;
+  padding-left: 25%;
   padding-right: 20%;
 
   border-radius: 50%;
@@ -14,7 +14,7 @@ const RoundImage = styled.img`
 function CustomerCard(props) {
   return (
     <Box>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, minWidth: 280 }}>
         <CardActionArea sx={{ mt: 5 }}>
           <RoundImage src={props.image} />
           <CardContent sx={{ alignContent: "center", boxShadow: 2 }}>

@@ -6,10 +6,10 @@ import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined
 
 function TrendingCourses() {
   const trends = [
-    { id: 1, name: "Complete Microsoft Office", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit", image: ss1 },
-    { id: 2, name: "PHP", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit", image: ss2 },
-    { id: 3, name: "React.js with node.js", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit", image: ss3 },
-    { id: 4, name: "Node.js", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit", image: ss4 }
+    { id: 1, name: "Complete Microsoft Office", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit, just write good things here.", image: ss1 },
+    { id: 2, name: "PHP", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit, just write good things here.", image: ss2 },
+    { id: 3, name: "React.js with node.js", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit, just write good things here.", image: ss3 },
+    { id: 4, name: "Node.js", descr: "Lorem ipsum dolor sit amet consectetur adipiscing elit, just write good things here.", image: ss4 }
   ];
   return (
     <Box sx={{ backgroundColor: "#D7DBDD" }}>
@@ -17,7 +17,7 @@ function TrendingCourses() {
         OTHER TRENDING COURSES
       </Typography>
       <Box
-        sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", m: 2 }}
+        sx={{ display: "grid", gridTemplateColumns: {xs:  "repeat(1, 1fr)", sm: "repeat(2, 1fr)"}, m: 2 }}
         container
         rowSpacing={0}
         columnSpacing={{ xs: 2, sm: 2, md: 3 }}

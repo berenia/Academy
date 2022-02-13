@@ -32,8 +32,9 @@ export default function CustomerReview() {
       <Box
         sx={{
           display: "flex",
-          p: 5,
+          backgroundColor: "#efefef",
           flexWrap: "wrap",
+          justifyContent: 'space-around',
           "& > :not(style)": {
             m: 3,
             width: 300,
