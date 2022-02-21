@@ -8,8 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -86,11 +85,12 @@ export default function LowerNavbar() {
                   color: "#333",
                   display: "block",
                   mr: 1,
+                  ml: 3,
                   "&:hover": { bgcolor: "#197aff", color: "#fff" },
                 }}
                 variant="outlined"
               >
-                Explore courses
+              <Link to="/courses" style={{textDecoration: 'none'}}> Explore courses </Link> 
               </Button>
             }
           </Box>

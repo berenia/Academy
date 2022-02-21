@@ -26,8 +26,13 @@ export const Item = styled(Paper)(({ theme }) => ({
         padding: 0,
         color: '#1133aa',
         marginBottom: 10,
+        marginTop: 42
     },
     customizeContainer : {
         padding: 0
+    },
+
+    link: {
+      textDecoration: 'none',
     }
   };

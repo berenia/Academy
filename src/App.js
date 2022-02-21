@@ -1,15 +1,11 @@
-import ResponsiveAppBar from "./components/navbar";
-import LowerNavbar from "./components/lowerNavbar";
-import Home from "./components/home/home";
+import React from 'react';
+import AppRouter from './components/router';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ResponsiveAppBar />
-        <LowerNavbar />
-      </header>
-      <Home />
+    <div>
+      <AppRouter />
     </div>
   );
 }
