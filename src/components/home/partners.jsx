@@ -3,13 +3,15 @@ import { Box, Card, Typography } from "@mui/material";
 import { AlarmOn, CorporateFare, FactCheck } from "@mui/icons-material";
 import CastForEducationIcon from "@mui/icons-material/CastForEducation";
 import {
+  ResolutionStyle,
+} from "../assets/MUIstyles/homeStyle";
+import {
   Button,
   FlatCard,
   FlatCardContent,
   FlatCardHeader,
-  FlatCardIcon,
-  ResolutionStyle,
-} from "../assets/MUIstyles/homeStyle";
+  FlatCardIcon
+} from "../assets/Berenia/FlatCard";
 
 const classes = ResolutionStyle;
 const PartnerWithUs = () => {

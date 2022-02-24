@@ -4,7 +4,7 @@ import {
   FlatCard,
   FlatCardContent,
   FlatCardHeader,
-} from "../assets/MUIstyles/homeStyle";
+} from "../assets/Berenia/FlatCard";
 import WhyUsImage from "../static/images/jpg/whyus.png";
 
 const school = [

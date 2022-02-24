@@ -5,7 +5,7 @@ import {
   FlatCard,
   FlatCardContent,
   FlatCardHeader,
-} from "../assets/MUIstyles/homeStyle";
+} from "../assets/Berenia/FlatCard";
 import JoinUs from "../static/images/jpg/team.jpg";
 
 const TargetCard = (props) => {

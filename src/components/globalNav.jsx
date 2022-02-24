@@ -11,7 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { styles } from "./assets/styles/customStyles";
+import { styles } from "./assets/MUIstyles/customStyles";
 import { width } from "@mui/system";
 import { Link } from "react-router-dom";
 // import { ClickableLinkChips, OutlinedClickableLinkChips } from './fragments/chip';

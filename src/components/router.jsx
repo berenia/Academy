@@ -6,6 +6,7 @@ import {
 import CoursePage from "./courses/coursePage";
 import GlobalNav from "./globalNav";
 import Home from "./home";
+import Footer from './footer';
 
 
   function Invoice() {
@@ -20,6 +21,7 @@ import Home from "./home";
         <main>
           <Outlet />
         </main>
+        <Footer />
       </div>
     );
   }
