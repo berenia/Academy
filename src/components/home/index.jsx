@@ -18,7 +18,7 @@ const Home = () => {
       <LowerNavbar />
       <Header />
       <HeaderPaper />
-      <main>
+      <main style={{padding: 20}}>
         <section>
           <Resolution />
         </section>

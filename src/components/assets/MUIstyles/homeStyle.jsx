@@ -68,4 +68,43 @@ export const ResolutionStyle = {
   },
 };
 
+export const SectionCardStyle = {
+  main: {
+    paddingBottom: { xs: 3, md: 0 },
+    mt: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    // animation: "example 5s ease-in-out",
+    // "@keyframes example": {
+    //   "0%": { left: "-20px" },
+    //   "100%": { left: "100px" },
+    // },
+  },
+  textArea: { textAlign: "center", fontWeight: "bold", marginBottom: "40px" },
+  imageArea: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  joinUsImageArea: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "center",
+    marginTop: { xs: 0, md: -5 },
+    order: { xs: "0", md: "1" },
+  },
+  image: { width: "80%", boxShadow: "0px 8px 20px 20px #ddd" },
+  text: {
+    padding: 2,
+    fontSize: "20px",
+  },
+};
 
+export const slide = {
+  animation: "example 2s ease",
+  "@keyframes example": {
+    "0%": { backgroundColor: "red" },
+    "100%": { backgroundColor: "yellow" },
+  },
+};

@@ -1,24 +1,26 @@
-import { css } from "@emotion/react";
-import styled from "styled-components";
+
+import styled, {css} from "styled-components";
 
 export const FlatCard = styled.div`
   max-width: ${(props) => (props.width ? props.width : '300px')};
   min-height: 200px;
   font-size: 20px;
-  display: flex;
+  display: ${(props) => (props.display ? props.display : 'flex')};
+  grid-template-columns: ${(props) => (props.gridTemplateColumns ? props.gridTemplateColumns : 'none')};
+  grid-template-rows: ${(props) => (props.gridTemplateRows ? props.gridTemplateRows : 'none')};
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: ${(props) => (props.flexDirection ? props.flexDirection : 'column')};
   background-color: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "#fff"};
   color: ${(props) => (props.color ? props.color : "#333")};
   padding: 10px;
-  z-index: 500px;
+  z-index: 2;
   border-radius: 10px;
   box-shadow: ${(props) => (props.boxShadow ? props.boxShadow : "0px")};
 
-  &:nth-child(even) img {
-    order: 2;
+  &:nth-child(odd) img {
+    order: 1;
   }
 `;
 export const FlatCardIcon = styled.div`
@@ -44,7 +46,10 @@ export const FlatCardContent = styled.div`
   text-align: ${(props) => (props.textAlign ? props.textAlign : "center")};
 `;
 export const FlatCardMedia = styled.div``;
-export const FlatCardImage = styled.img``;
+export const FlatCardImage = styled.img`
+  width: 100%,
+  boxShadow: '0px 8px 20px 20px #ddd',
+`;
 
 export const Button = styled.button`
   ${(props) => {
@@ -53,6 +58,7 @@ export const Button = styled.button`
         return css`
           background-color: blue;
           color: white;
+          border-radius: 20px;
           &:hover {
             background-color: white;
             color: blue;
@@ -61,15 +67,17 @@ export const Button = styled.button`
       case "outlined":
         return css`
           background-color: transparent;
-          color: white;
+          color: #19c3ff;
+          border-radius:20px;
+          border: 1px solid #19c3ff;
           &:hover {
-            background-color: inherit;
-            color: inherit;
+            background-color: #eee;
+            color: #1953ff;;
           }
         `;
       default:
         return css`
-          background-color: white;
+          background-color: yellow;
           color: #555;
           &:hover {
             color: #333;
