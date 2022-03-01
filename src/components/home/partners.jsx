@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box, Card, Typography } from "@mui/material";
 import { AlarmOn, CorporateFare, FactCheck } from "@mui/icons-material";
 import CastForEducationIcon from "@mui/icons-material/CastForEducation";
@@ -32,7 +32,11 @@ We love to have a deal with you
           flexWrap: "wrap",
         }}
       >
-        <FlatCard>
+        <FlatCard 
+            data-aos='fade-down-left'
+            data-aos-easing="ease-in-out"
+            data-aos-offset='300'
+            data-aos-duration='1500'>
           <FlatCardIcon>
             <CastForEducationIcon />
           </FlatCardIcon>
@@ -43,7 +47,11 @@ We love to have a deal with you
           </FlatCardContent>
         </FlatCard>
 
-        <FlatCard>
+        <FlatCard 
+            data-aos='fade-down-right'
+            data-aos-easing="ease-in-out"
+            data-aos-offset='300'
+            data-aos-duration='1500'>
           <FlatCardIcon>
             <CorporateFare />
           </FlatCardIcon>

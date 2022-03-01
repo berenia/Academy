@@ -1,5 +1,4 @@
 
-import React from "react";
 import { Button, Grid, Typography } from "@mui/material";
 import { SectionCardStyle } from "../assets/MUIstyles/homeStyle";
 import {
@@ -8,15 +7,6 @@ import {
   FlatCardHeader,
 } from "../assets/Berenia/FlatCard";
 import JoinUs from "../static/images/jpg/joinus.jpg";
-
-const TargetCard = (props) => {
-  return (
-    <FlatCard>
-      <FlatCardHeader>{props.level}</FlatCardHeader>
-      <FlatCardContent>{props.intro}</FlatCardContent>
-    </FlatCard>
-  );
-};
 
 const classes = SectionCardStyle;
 
@@ -34,7 +24,10 @@ const JobRequirement = () => {
           style={classes.image}
         />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={6} data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="600">
         <Typography
           component="div"
           variant="h3"

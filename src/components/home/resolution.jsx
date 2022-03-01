@@ -1,28 +1,23 @@
-import React from "react";
+
 import { Box, Card, Typography } from "@mui/material";
 import { AlarmOn, CorporateFare, FactCheck } from "@mui/icons-material";
 import CastForEducationIcon from "@mui/icons-material/CastForEducation";
 import {
-  ResolutionStyle,
-} from "../assets/MUIstyles/homeStyle";
-import {
-  Button,
   FlatCard,
   FlatCardContent,
   FlatCardHeader,
-  FlatCardIcon
+  FlatCardIcon,
 } from "../assets/Berenia/FlatCard";
 
-const classes = ResolutionStyle;
 const Resolution = () => {
   return (
-    <Box sx={{ padding:{xs: 6, md:15 }, paddingTop:{xs: 10, md:12} }}>
+    <Box sx={{ padding: { xs: 6, md: 15 }, paddingTop: { xs: 10, md: 12 } }}>
       <Typography
         variant="h3"
         component="div"
-        sx={{ textAlign: "center", mb: 8, width: '100%', fontWeight: 'bold' }}
+        sx={{ textAlign: "center", mb: 8, width: "100%", fontWeight: "bold" }}
       >
-        Final resolution to get the skill <br/>
+        Final resolution to get the skill <br />
         Its time to start the journey
       </Typography>
       <div
@@ -32,7 +27,11 @@ const Resolution = () => {
           flexWrap: "wrap",
         }}
       >
-        <FlatCard>
+        <FlatCard
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="500"
+        >
           <FlatCardIcon>
             <CastForEducationIcon />
           </FlatCardIcon>
@@ -43,7 +42,11 @@ const Resolution = () => {
           </FlatCardContent>
         </FlatCard>
 
-        <FlatCard>
+        <FlatCard
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="700"
+        >
           <FlatCardIcon>
             <CorporateFare />
           </FlatCardIcon>
@@ -54,7 +57,11 @@ const Resolution = () => {
           </FlatCardContent>
         </FlatCard>
 
-        <FlatCard>
+        <FlatCard
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="900"
+        >
           <FlatCardIcon>
             <FactCheck />
           </FlatCardIcon>

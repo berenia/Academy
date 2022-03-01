@@ -1,12 +1,12 @@
+
 import { Button, Grid, Typography } from "@mui/material";
-import React from "react";
 import { SectionCardStyle } from "../assets/MUIstyles/homeStyle";
 import {
   FlatCard,
   FlatCardContent,
   FlatCardHeader,
 } from "../assets/Berenia/FlatCard";
-import JoinUs from "../static/images/jpg/team.jpg";
+import JoinUs from "../static/images/jpg/bb7.jpg";
 
 const TargetCard = (props) => {
   return (
@@ -33,7 +33,10 @@ const JoinOurTeam = () => {
         />
       </Grid>
 
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={6} data-aos="fade-up-left"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="600">
         <Typography
           component="div"
           variant="h3"

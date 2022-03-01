@@ -18,12 +18,15 @@ const Home = () => {
       <LowerNavbar />
       <Header />
       <HeaderPaper />
-      <main style={{padding: 20}}>
+      <main style={{ padding: 20 }}>
         <section>
           <Resolution />
         </section>
 
-        <section>
+        <section data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-offset="100"
+          data-aos-duration="500">
           <WhyChoosingUs />
         </section>
 

@@ -80,7 +80,7 @@ export const SectionCardStyle = {
     //   "100%": { left: "100px" },
     // },
   },
-  textArea: { textAlign: "center", fontWeight: "bold", marginBottom: "40px" },
+  textArea: { textAlign: "center", marginBottom: "40px" },
   imageArea: {
     display: "flex",
     width: "100%",
@@ -97,7 +97,7 @@ export const SectionCardStyle = {
   image: { width: "80%", boxShadow: "0px 8px 20px 20px #ddd" },
   text: {
     padding: 2,
-    fontSize: "20px",
+    color: '#555',
   },
 };
 
