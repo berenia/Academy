@@ -1,5 +1,3 @@
-import { css } from "@emotion/react";
-import styled from "styled-components";
 import headerImage from "../../static/images/png/header.png";
 
 export const HeaderStyle = {

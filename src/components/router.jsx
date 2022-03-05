@@ -8,7 +8,7 @@ import GlobalNav from "./globalNav";
 import Home from "./home";
 import Footer from './footer';
 import Contact from "./contact";
-import SignUp from "./signup/sign-up"
+import SignUser from "./signUser/signUser";
 
 
   function Invoice() {
@@ -48,7 +48,7 @@ function AppRouter(){
                         <Route path=":profileId" element={<Notification/>} />
                         <Route path="profileId" element={<TutorContact />} />
                     </Route> */}
-                    <Route path="/sign-up" element={<SignUp />} />
+                    <Route path="/sign-up" element={<SignUser />} />
                     <Route path="/contact" element={<Contact />} />
                 </Route>
                 </Routes>
