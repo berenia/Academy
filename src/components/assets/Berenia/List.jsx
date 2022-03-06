@@ -92,7 +92,7 @@ export const ListText = styled.li`
   background-color: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "transparent"};
   color: ${(props) => (props.color ? props.color : "inherit")};
-  padding: ${(props) => (props.padding ? props.padding : "8px 0px 0px 12px")};
+  padding: ${(props) => (props.padding ? props.padding : "8px 8px 8px 12px")};
   font-size: ${(props) => (props.fontSize ? props.fontSize : "inherit")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
   &:hover {

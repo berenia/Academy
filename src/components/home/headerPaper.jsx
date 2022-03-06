@@ -1,4 +1,4 @@
-import React from "react";
+
 import Box from "@mui/material/Box";
 import { Button, Paper, Typography } from "@mui/material";
 import { HeaderPaperStyle } from "../assets/MUIstyles/homeStyle";
@@ -36,7 +36,7 @@ const HeaderPaper = () => {
     <Box sx={classes.BoxStyle}>
       {PaperData.map((paperData) => (
         <Papers
-          catId={paperData.catId}
+          key={paperData.catId}
           caption={paperData.caption}
           intro={paperData.intro}
         />

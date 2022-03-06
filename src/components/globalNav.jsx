@@ -12,9 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { styles } from "./assets/MUIstyles/customStyles";
-import { width } from "@mui/system";
 import { Link } from "react-router-dom";
-// import { ClickableLinkChips, OutlinedClickableLinkChips } from './fragments/chip';
 
 const pages = ["About", "Contact Us", "Become Instructor", "Partner with Us"];
 const settings = [
@@ -87,7 +85,9 @@ const GlobalNav = () => {
                 pd: 0,
               }}
             >
-              <Link to="/" style={classes.link}>Berenia Academy</Link>
+              <Link to="/" style={classes.link}>
+                Berenia Academy
+              </Link>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -121,7 +121,13 @@ const GlobalNav = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    {page == "Contact Us" ? (
+                      <Link to="contact">
+                        <Typography textAlign="center">{page}</Typography>
+                      </Link>
+                    ) : (
+                      <Typography textAlign="center">{page}</Typography>
+                    )}
                   </MenuItem>
                 ))}
               </Menu>
@@ -137,7 +143,9 @@ const GlobalNav = () => {
                 fontWeight: "bold",
               }}
             >
-              Berenia Academy
+              <Link to="/" style={classes.link}>
+                Berenia Academy
+              </Link>
             </Typography>
             <Box
               sx={{
@@ -160,7 +168,13 @@ const GlobalNav = () => {
                   }}
                   variant="outlined"
                 >
-                  {page}
+                   {page == "Contact Us" ? (
+                      <Link to="contact">
+                        {page}
+                      </Link>
+                    ) : (
+                      page
+                    )}
                 </Button>
               ))}
             </Box>
@@ -191,9 +205,15 @@ const GlobalNav = () => {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                {settings.map((page) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    {page == "Sign in" ? (
+                      <Link to="sign-up">
+                        <Typography textAlign="center">{page}</Typography>
+                      </Link>
+                    ) : (
+                      <Typography textAlign="center">{page}</Typography>
+                    )}
                   </MenuItem>
                 ))}
               </Menu>

@@ -1,5 +1,4 @@
 import { Grid, Typography } from "@mui/material";
-import React from "react";
 import {
   FlatCard,
   FlatCardContent,
@@ -42,14 +41,13 @@ const WhyChoosingUs = () => {
     <Grid
       container
       spacing={5}
-      sx={{ paddingLeft: { xs: 2, md: 15 }, paddingRight: { xs: 2, md: 15 } }}
+      sx={{ justifyContent: 'center', alignItems: 'center', paddingLeft: { xs: 2, md: 0 }, }}
     >
       <Grid item xs={12} md={6} sx={{ width: "100%", marginTop: -10 }}>
         <img
           src={WhyUsImage}
           style={{
-            borderRadius: "50%",
-            width: "400px",
+            width: '100%',
           }}
         />
       </Grid>
@@ -58,12 +56,12 @@ const WhyChoosingUs = () => {
         <Typography
           component="div"
           variant="h3"
-          sx={{ fontWeight: 'bold', textAlign: "center" }}
+          sx={{ fontWeight: 'bold', textAlign: "center", marginBottom: '40px', }}
         >
           Why Choosing Us
         </Typography>
         <Typography
-          sx={{ padding: { xs: 0, md: 2 }, paddingTop: 2, fontSize: "20px" }}
+          sx={{ padding: { xs: 0, md: 2 }, paddingTop: 2,  color: '#333' }}
         >
           We have Created System that will help you proficient in your skills
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -80,6 +78,11 @@ const WhyChoosingUs = () => {
           flexWrap: "wrap",
           justifyContent: "space-around",
         }}
+        
+        data-aos='fade-left'
+        data-aos-delay='300'
+        data-aos-offset='300'
+        data-aos-duration='1000'
       >
         {school.map((target) => (
           <TargetCard

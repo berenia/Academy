@@ -90,7 +90,10 @@ export default function LowerNavbar() {
                 }}
                 variant="outlined"
               >
-              <Link to="/courses" style={{textDecoration: 'none'}}> Explore courses </Link> 
+                <Link to="/courses" style={{ textDecoration: "none" }}>
+                  {" "}
+                  Explore courses{" "}
+                </Link>
               </Button>
             }
           </Box>
@@ -131,7 +134,7 @@ export default function LowerNavbar() {
                 }}
                 variant="outlined"
               >
-                {accessPage}
+                <Link to="sign-up">{accessPage}</Link>
               </Button>
             ))}
           </Box>

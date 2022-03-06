@@ -9,6 +9,9 @@ import TutorDesk from "./courses/profile/tutorDesk";
 import TutorContact from "./courses/profile/tutorContact";
 import Notifications from "./courses/profile/notifications";
 import Courses from "./courses/profile/coursePage";
+import Footer from "./footer";
+import Contact from "./contact";
+import SignUser from "./signUser/signUser";
 
 function Invoice() {
   let params = useParams();
@@ -44,6 +47,8 @@ function AppRouter() {
             <Route path="tutordesk" element={<TutorDesk />} />
             <Route path="notifications" element={<Notifications />} />
             <Route path="completed" element={<Courses />} />
+            <Route path="/sign-up" element={<SignUser />} />
+            <Route path="/contact" element={<Contact />} />
 
             {/*<Route path=":profileId" element={<Payment/>} />
                         <Route path="profileId" element={<Certificate />} />

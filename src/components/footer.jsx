@@ -47,7 +47,7 @@ function Footer() {
           <ListHeader fontSize="20px">Follow Us</ListHeader>
           <ListIconWrapper>
             {FollowUs.map((data) => (
-              <ListIcon iconName={data}>
+              <ListIcon iconName={data} key={data}>
                 {data == "Facebook" ? <Facebook /> : ""}
                 {data == "Instagram" ? <Instagram /> : ""}
                 {data == "Twitter" ? <Twitter /> : ""}
@@ -62,7 +62,7 @@ function Footer() {
           <ListHeader fontSize="20px">Company</ListHeader>
 
           {company.map((data) => (
-            <ListText color="#aaa">{data}</ListText>
+            <ListText color="#aaa" key={data}>{data}</ListText>
           ))}
         </List>
       </Grid>
@@ -70,7 +70,7 @@ function Footer() {
         <List>
           <ListHeader fontSize="20px">Work with Us</ListHeader>
           {WorkWithUs.map((data) => (
-            <ListText color="#aaa">{data}</ListText>
+            <ListText color="#aaa" key={data}>{data}</ListText>
           ))}
         </List>
       </Grid>
@@ -79,7 +79,7 @@ function Footer() {
           <ListHeader fontSize="20px">Discover</ListHeader>
 
           {Discover.map((data) => (
-            <ListText color="#aaa">{data}</ListText>
+            <ListText color="#aaa" key={data}>{data}</ListText>
           ))}
         </List>
       </Grid>
@@ -87,7 +87,7 @@ function Footer() {
         <List>
           <ListHeader fontSize="20px">Business</ListHeader>
           {ForBusiness.map((data) => (
-            <ListText color="#aaa">{data}</ListText>
+            <ListText color="#aaa" key={data}>{data}</ListText>
           ))}
         </List>
       </Grid>
