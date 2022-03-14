@@ -9,6 +9,7 @@ import Home from "./home";
 import Footer from './footer';
 import Contact from "./contact";
 import SignUser from "./signUser/signUser";
+import PaymentContainer from "./payment/paymentBody";
 
 
   function Invoice() {
@@ -50,6 +51,7 @@ function AppRouter(){
                     </Route> */}
                     <Route path="/sign-up" element={<SignUser />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="profileId" element={<PaymentContainer/>} />
                 </Route>
                 </Routes>
             </Router>

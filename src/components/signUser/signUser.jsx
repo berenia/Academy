@@ -4,6 +4,7 @@ import { Style } from "../assets/MUIstyles/signUp";
 import SendIcon from "@mui/icons-material/Send";
 import SignIn from "./signin";
 import SignUp from "./signup";
+import BgImage1 from "../static/images/png/signin.png";
 
 import { useState } from "react";
 
@@ -98,6 +99,7 @@ const SignUser = () => {
   return (
     <Box
       sx={{
+        backgroundImage: `url(${BgImage1})`,
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
