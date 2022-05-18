@@ -31,13 +31,14 @@ export default function CustomerReview() {
       </Typography>
       <Box
         sx={{
+          width:'100%',
           display: "flex",
           backgroundColor: "#efefef",
           flexWrap: "wrap",
           justifyContent: 'space-around',
           "& > :not(style)": {
             m: 3,
-            width: 300,
+            width: 200,
             height: 350
           }
         }}

@@ -6,7 +6,7 @@ const RoundImage = styled.img`
   width: 150px;
   height: 150px;
   padding-left: 25%;
-  padding-right: 20%;
+  padding-right: 25%;
 
   border-radius: 50%;
 `;

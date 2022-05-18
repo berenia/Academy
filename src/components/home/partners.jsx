@@ -36,7 +36,7 @@ We love to have a deal with you
             data-aos='fade-down-left'
             data-aos-easing="ease-in-out"
             data-aos-offset='300'
-            data-aos-duration='1500'>
+            data-aos-duration='1000'>
           <FlatCardIcon>
             <CastForEducationIcon />
           </FlatCardIcon>

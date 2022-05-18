@@ -11,7 +11,7 @@ import {
 
 const Resolution = () => {
   return (
-    <Box sx={{ padding: { xs: 6, md: 15 }, paddingTop: { xs: 10, md: 12 } }}>
+    <Box sx={{ padding: { xs: 2, md: 1 }, paddingTop: { xs: 4, md: 6 } }}>
       <Typography
         variant="h3"
         component="div"
@@ -60,7 +60,7 @@ const Resolution = () => {
         <FlatCard
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-duration="900"
+          data-aos-duration="700"
         >
           <FlatCardIcon>
             <FactCheck />

@@ -4,7 +4,7 @@ import styled, {css} from "styled-components";
 export const FlatCard = styled.div`
   max-width: ${(props) => (props.width ? props.width : '300px')};
   min-height: 200px;
-  font-size: 20px;
+  font-size: 16px;
   display: ${(props) => (props.display ? props.display : 'flex')};
   grid-template-columns: ${(props) => (props.gridTemplateColumns ? props.gridTemplateColumns : 'none')};
   grid-template-rows: ${(props) => (props.gridTemplateRows ? props.gridTemplateRows : 'none')};

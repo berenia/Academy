@@ -56,7 +56,7 @@ const WhyChoosingUs = () => {
         <Typography
           component="div"
           variant="h3"
-          sx={{ fontWeight: 'bold', textAlign: "center", marginBottom: '40px', }}
+          sx={{ fontWeight: 'bold', textAlign: "center", marginBottom: '20px', }}
         >
           Why Choosing Us
         </Typography>

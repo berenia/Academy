@@ -34,7 +34,7 @@ const JoinOurTeam = () => {
       </Grid>
 
       <Grid item xs={12} md={6} data-aos="fade-up-left"
-          data-aos-offset="500"
+          data-aos-offset="200"
           data-aos-easing="ease-in-out"
           data-aos-duration="600">
         <Typography
